@@ -41,7 +41,7 @@ class ProductController extends Controller
         // Successful
         return response()->json([
             "Status"=>200,
-            "message"=>"Product added successfully"
+            "message"=>"Book added successfully"
         ]);
     }
 
@@ -70,7 +70,7 @@ class ProductController extends Controller
 
             return response()->json([
                 "Status"=>200,
-                "message"=>"Product updated successfully"
+                "message"=>"Details updated successfully"
             ]);
         }
     }
