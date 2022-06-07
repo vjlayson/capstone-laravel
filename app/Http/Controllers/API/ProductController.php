@@ -19,7 +19,7 @@ class ProductController extends Controller
             "product_name"=>"required",
             "description"=>"required",
             "price"=>"required",
-            "stock"=>"required"
+            "contact_number"=>"required"
         ]);
 
         // Fails
@@ -35,7 +35,7 @@ class ProductController extends Controller
         $product -> product_name = $request -> input("product_name");
         $product -> description = $request -> input("description");
         $product -> price = $request -> input("price");
-        $product -> stock = $request -> input("stock");
+        $product -> contact_number = $request -> input("contact_number");
         $product -> save();
 
         // Successful
@@ -50,7 +50,7 @@ class ProductController extends Controller
             "product_name"=>"required",
             "description"=>"required",
             "price"=>"required",
-            "stock"=>"required"
+            "contact_number"=>"required"
         ]);
 
         if($validator -> fails()){
@@ -65,7 +65,7 @@ class ProductController extends Controller
             $product -> product_name = $request -> input("product_name");
             $product -> description = $request -> input("description");
             $product -> price = $request -> input("price");
-            $product -> stock = $request -> input("stock");
+            $product -> contact_number = $request -> input("contact_number");
             $product -> save();
 
             return response()->json([

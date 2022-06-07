@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string("product_name");
             $table->string("description");
             $table->float("price",8,2);
-            $table->integer("stock");
+            $table->char("contact_number");
             $table->timestamp("created_at")->useCurrent();
             $table->timestamp("updated_at")->useCurrent()->useCurrentOnUpdate();
         });
